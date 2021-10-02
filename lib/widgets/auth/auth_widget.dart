@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_the_movie_db/theme/app_buttoin_style.dart';
-import 'package:flutter_the_movie_db/widgets/main_screen/main_screen_widget.dart';
 
 class AuthWidget extends StatefulWidget {
   const AuthWidget({Key? key}) : super(key: key);
@@ -75,8 +74,8 @@ class _FormWidget extends StatefulWidget {
 }
 
 class __FormWidgetState extends State<_FormWidget> {
-  final _loginTextController = TextEditingController();
-  final _passwordTextController = TextEditingController();
+  final _loginTextController = TextEditingController(text: 'admin');
+  final _passwordTextController = TextEditingController(text: 'admin');
   String? errorText = null;
   void _auth() {
     final login = _loginTextController.text;
