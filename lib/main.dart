@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_the_movie_db/theme/app_colors.dart';
 import 'package:flutter_the_movie_db/widgets/auth/auth_widget.dart';
 import 'package:flutter_the_movie_db/widgets/main_screen/main_screen_widget.dart';
 
@@ -14,7 +15,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         appBarTheme: AppBarTheme(
-          backgroundColor: const Color.fromRGBO(3, 37, 65, 1),
+          backgroundColor: AppColors.mainDarkBlue,
+        ),
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          backgroundColor: AppColors.mainDarkBlue,
+          selectedItemColor: Colors.white,
+          unselectedItemColor: Colors.grey,
         ),
       ),
       routes: {
